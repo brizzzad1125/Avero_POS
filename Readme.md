@@ -2,7 +2,7 @@
 
 This is a coding exercise project for an Avero Point of Sale System. See https://github.com/AveroLLC/check-api/ for more details.
 
-## How to used
+## How to use
 
 Note: Node v 8 is required to run this project.
 
