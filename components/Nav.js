@@ -1,37 +1,42 @@
 import Link from "next/link";
-import { Button } from "antd";
 
 export default props =>
   <div className="main">
     <nav className="sidebar">
       <img src="/static/new-avero-logo-white.png" className="logo" />
-      <div className="nav-buttons">
-        <Link href="/tables">
-          <Button>Tables</Button>
-        </Link>
-        <Link href="/checks">
-          <Button>Checks</Button>
-        </Link>
-      </div>
+      <ul className="nav-buttons">
+        <li>
+          <Link href="/tables">
+            <a className="link">Tables</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/checks">
+            <a className="link">Checks</a>
+          </Link>
+        </li>
+      </ul>
     </nav>
     {props.children}
     <style jsx>
       {`
-        :global(body) {
-          margin: 0;
-          font-family: 'Open Sans', arial, sans-serif;
-          height: 100%;
+        a {
+          text-decoration: none;
         }
-        :global(#__next, html) {
-          height: 100%;
+        .link {
+          color: white;
+          font-size: 20px;
+        }
+        ul {
+          list-style-type: none;
+          padding-inline-start: 0;
         }
         .nav-buttons {
           display: flex;
           width: 120px;
           flex-direction: column;
-          align-self: center;
+          align-self: flex-start;
           margin: 16px;
-          height: 72px;
           justify-content: space-between;
         }
         .sidebar {
@@ -42,7 +47,7 @@ export default props =>
           padding: 16px;
         }
         .logo {
-          width: 256px;
+          width: 196px;
         }
         .main {
           display: flex;
