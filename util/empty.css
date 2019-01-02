@@ -1,0 +1,3 @@
+/* this is a work around for known next plugin bug - https://github.com/zeit/next-plugins/issues/282 */
+body {
+}
