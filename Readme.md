@@ -2,6 +2,12 @@
 
 This is a coding exercise project for an Avero Point of Sale System. See https://github.com/AveroLLC/check-api/ for more details.
 
+
+```bash
+git clone https://github.com/brizzzad1125/Avero_POS.git
+cd Avero_POS
+```
+
 ## How to use
 
 with yarn 
