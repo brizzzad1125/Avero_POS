@@ -4,6 +4,9 @@ This is a coding exercise project for an Avero Point of Sale System. See https:/
 
 ## How to used
 
+Note: Node v 8 is required to run this project.
+
+
 ```bash
 git clone https://github.com/brizzzad1125/Avero_POS.git
 cd Avero_POS
